@@ -7,7 +7,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  title = 'Karibu to Quotes baz';
+  title = 'Karibu to Quotes baze-Bazu';
   quotes:Quotes [] = [
     new Quotes (1,'Jack','Winner never give up','The struggle must continue','Gallant Man', new Date(2020,6,28),0,0),
     new Quotes (2,'Nancy','farmers','Make hay while sun shines.','Brender Rogers',new Date(2012,5,10),0,0),
