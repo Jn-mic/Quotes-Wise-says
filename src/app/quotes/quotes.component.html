@@ -1,0 +1,27 @@
+<div class="overlay">
+    <h1>
+      {{ title }}
+    </h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <app-quotes-form (add)="addedQuote($event)"></app-quotes-form>
+        </div>
+        <div class="col-sm-9">
+          <div class="all-cards">
+            <div *ngFor="let quote of sortQuotes let i= index" class="card" style="width: 24rem;"  >
+              <div class="card-body">
+                <h4 class="card-title" appHighlightQuote >{{quote.title}} {{quote.likes}}
+                  <button (click)='displayInformation(i)' class="btn btn-success btn-sm" id="quotes-button" >See More</button></h4>
+                <p class="card-text" id="param">{{quote.quote}}</p>
+                <app-quotes-details *ngIf='quote.showInfo' bind-quotes='quotes' (isRead)='quoteDelete($event,i)'></app-quotes-details>
+                <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.name}}</span><span id="date">on: <span id="datecolor">{{quote.datePosted|date:'short'}}</span></span></span>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
