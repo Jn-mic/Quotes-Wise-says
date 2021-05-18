@@ -7,14 +7,14 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  title = 'welcome to tech quotes';
+  title = 'Karibu to Quotes baze';
   quotes:Quotes [] = [
     new Quotes (1,'Jack','Winner never give up','The struggle must continue','Gallant Man', new Date(2020,6,28),0,0),
-    new Quotes (2,'Nancy','farmer','Make hay while sun shines.','Brender Rogers',new Date(2012,5,12),0,0),
-    new Quotes(3,'Fun','The great myth','The great myth of our times is that technology is communication.','Libby Larsen',new Date(2019,6,3),0,0),
-    new Quotes(4,'Vila','Communication','Communications tools don’t get socially interesting until they get technologically boring.','Clay Shirky',new Date(2019,7,7),0,0),
-    new Quotes (5,'Harry','marriage life','Programs must be written for people to read, ........','Kella ROll',new Date(2019,7,17),0,0),
-    new Quotes(6,'Adiola','Spiritual life','For a list of all the ways technology has failed to improve the quality of life, please press three.','Alice Kahn',new Date(2019,7,15),0,0)
+    new Quotes (2,'Nancy','farmer','Make hay while sun shines.','Brender Rogers',new Date(2012,5,10),0,0),
+    new Quotes(3,'Fun','Fun Dog','Dogs do have leisure too','Jimmy Carter',new Date(2012,6,3),0,0),
+    new Quotes(4,'Vila','Learning','we live to learn each day','Marie Rose',new Date(2005,4,8),0,0),
+    new Quotes (5,'Harry','marriage life','Learning never stop','Kelly ROlland',new Date(2019,2,30),0,0),
+    new Quotes(6,'Abu','Spiritual life','Keep prayers and work','vera sidika',new Date(2021,5,6),0,0)
   ];
   get sortQuotes() {
     return this.quotes.sort((a, b) => {
